@@ -22,21 +22,28 @@ This program is used to identify dynamixels on your network and configure dynami
 Clone the repository
 
 ```
-$ git clone https://github.com/clebercoutof/mixcell
+$ git clone https://github.com/MB-Huang/mixcell
 ```
 
 Run the shell script to install the Dynamixel SDK, case there is an error follow the instructions 
 in the prerequisites.
 
-Go to the installation folder and run install.sh
+Go to the installation folder and run install_dxl_sdk.sh and install.sh
 
 ```
 $ cd mixcell/install/
 ```
 
+Install linux64 C library of Dynamixel SDK Version 3.5.4
+```
+$ ./install_dxl_sdk.sh
+```
+
+Add shortcut to mixcell into `~/.bashrc`
 ```
 $ ./install.sh
 ```
+
 It's necessary to give your user permanent permissions do access the usb port, so
 ```
 sudo usermod -a -G dialout $USER 
@@ -55,7 +62,7 @@ $ cd mixcell/install/
 ```
 
 ```
-$ ./reinstall.sh
+$ ./reinstall_dxl_sdk.sh
 ```
 
 
